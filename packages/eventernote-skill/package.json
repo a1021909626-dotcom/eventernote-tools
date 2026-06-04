@@ -6,7 +6,10 @@
     "eventernote": "dist/eventernote.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin",
+    "references",
+    "SKILL.md"
   ],
   "scripts": {
     "build": "tsup",
