@@ -1,0 +1,25 @@
+{
+  "name": "@cknl/eventernote-skill",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "eventernote": "dist/eventernote.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "smoke": "node dist/eventernote.js --help",
+    "typecheck": "tsup",
+    "lint": "tsup"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@cknl/eventernote-cli": "workspace:*"
+  }
+}

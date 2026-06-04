@@ -1,0 +1,21 @@
+{
+  "name": "@cknl/eventernote-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "eventernote-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "@cknl/eventernote-core": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.13.0",
+    "zod": "^3.24.0"
+  }
+}

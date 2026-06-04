@@ -1,0 +1,25 @@
+{
+  "name": "@cknl/eventernote-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "eventernote": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/cli.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsup",
+    "lint": "tsup"
+  },
+  "dependencies": {
+    "@cknl/eventernote-core": "workspace:*"
+  }
+}
